@@ -1,0 +1,54 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: black;
+    padding-top: 5%;
+    text-shadow: 3px 3px 5px grey, -4px -4px 5px rgb(71, 70, 70);
+}
+
+body {
+    text-align: center;
+}
+
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+
+    width: 549.4px;
+    height: 540px;
+
+    grid-template-columns: repeat(3, 10vh);
+    grid-template-rows: repeat(3, 10vh);
+
+    margin: auto;
+}
+
+.cell {
+    background-color: white;
+    border: 3px solid black;
+
+    width: 180px;
+    height: 180px;
+}
+
+.symbol {
+    font-size: 100px;/
+}
+
+#container {
+    position: relative;
+}
+
+#game-over {
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(185, 191, 240);
+    padding: 20px;
+    z-index: 999;
+    display: none;
+}
